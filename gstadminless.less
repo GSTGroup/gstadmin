@@ -1,0 +1,74 @@
+/* $Id:$ */
+/* 
+    Document   : gstadminless.less
+    Created on : Dec 20, 2010, 11:05:27 PM
+    Author     : fields
+    Description:
+        LESS Preprocess file. Creates men.css.
+        This file was created with: menless.less using lessphp
+*/
+
+#admin-menu {
+ font: 0.8em "Lucida Grande",Verdana,sans-serif;
+ .admin-menu-toolbar-category a {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+html body.admin-menu {
+  margin-top: 0px !important;
+  /* Remove Duplicate Toolbar if Admin Menu is ON */
+  #toolbar { display: none; }
+  /* Push the overlay down a bit so it doesn't get hidden *BELOW* the Admin MEnu */
+  #overlay {
+    padding-top: 30px;
+  }  
+  table.sticky-header {
+    top: 30px !important; /* This is to take care of not ensuring the header is under the admin-menu */
+  }  
+}
+
+
+
+table#field-overview.field-ui-overview {  
+  @font-size: 95%;
+  div { font-size: @font-size; }
+  span { font-size: @font-size; }
+  th,td { 
+    font-size: @font-size; 
+    padding: 4px 5px;
+  }
+  input,select,textarea { 
+    font-size: @font-size; 
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+  }
+  #edit-fields-add-new-field-field-name {
+    width: 12em;
+    margin-right: -4em;
+  }
+
+  @font-size-td: 1.0em;
+  td {
+    .description { font-size: @font-size-td; }
+    .field-prefix { font-size: @font-size-td; }
+    .form-text { font-size: @font-size-td; }
+  }
+}
+
+/* Views / C-Tools / PageManager Fixes
+----------------------------------------------------------------------- */
+.views-edit-view {
+  ul.secondary {
+    margin-top: -1.4em;
+    margin-bottom: 0.3em;
+  }
+  .views-display-top .secondary > li {
+    margin-bottom: -6px;
+    margin-top: 14px;
+  }
+}
+
+#page-manager-list-pages td.page-manager-page-operations .ctools-dropbutton {
+  right: 30px;
+}

@@ -1,0 +1,19 @@
+/* 
+    Document   : gstadmincss.css
+    Created on : Aug 11, 2011, 10:29:02 PM
+    Author     : Fields
+    Description:
+        GST Admin Style - This file is NOT preprocesed.
+*/
+
+/* Remove Duplicate Toolbar if Admin Menu is ON */
+/*
+.admin-menu #toolbar {
+  display: none;
+}
+html body.admin-menu {
+  margin-top: 0px !important;
+}
+*/
+
+
